@@ -11,3 +11,12 @@ buttonSuma.addEventListener("click", () =>{
    limpiar(num1, num2)
 })
 
+//tarea1: agregar eventos a los botones de resta, multiplicación y división, y mostrar el resultado en el elemento con id resultado. No olvidar limpiar los campos después de cada operación.
+//tarea2: crear un archivo que se llame metodos.html, contendra unicamente un input de tipo numero y un boton que calculen: numero pares, impares y primos
+//Que el resultado se muestre en un parrafo debajo del boton ejemplo:
+//Fecha de entrega: jueves 11 de junio hasta las 11:59 pm
+//1- clic al boton  ---> el numero es impar y primo 
+//2- clic al boton  ---> el numero es impar y primo 
+//3- clic al boton  ---> el numero es impar y primo 
+//4- clic al boton  ---> el numero es impar y primo 
+//5- clic al boton  ---> el numero es impar y primo 
