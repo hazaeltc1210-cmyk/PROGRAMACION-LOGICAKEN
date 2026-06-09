@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>metodos</title>
+</head>
+<body>
+
+  <input type="number" id="numero">
+  <button id="boton">Verificar</button>
+
+  <script>
+    const numero = document.querySelector("#numero");
+    const boton = document.querySelector("#boton");
+
+    function esPrimo(n) {
+      if (n <= 1) return false;
+
+      for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    boton.addEventListener("click", () => {
+      const valor = Number(numero.value);
+
+      if (numero.value === "") {
+        alert("Escribe un número");
+        return;
+      }
+
+      if (esPrimo(valor)) {
+        alert("El número es primo");
+      } else if (valor % 2 === 0) {
+        alert("El número es par");
+      } else {
+        alert("El número es impar");
+      }
+    });
+  </script>
+
+</body>
+</html>
