@@ -33,13 +33,22 @@
         return;
       }
 
-      if (esPrimo(valor)) {
-        alert("El número es primo");
-      } else if (valor % 2 === 0) {
-        alert("El número es par");
+      let tipo = "";
+      let primo = "";
+
+      if (valor % 2 === 0) {
+        tipo = "par";
       } else {
-        alert("El número es impar");
+        tipo = "impar";
       }
+
+      if (esPrimo(valor)) {
+        primo = "y primo";
+      } else {
+        primo = "y no es primo";
+      }
+
+      alert("El número es " + tipo + " " + primo);
     });
   </script>
 
