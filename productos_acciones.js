@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", e => {
                 <td>${pesitos.format(productosData[index].precio)}</td>
                 <td>${productosData[index].categoria}</td>
                 <td>${productosData[index].stock}</td>
+                <td>"TotalStock"</td>
             </tr>
             `
 }
